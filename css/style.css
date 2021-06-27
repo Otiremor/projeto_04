@@ -282,6 +282,60 @@ section.depoimentos .depoimento-single .nome-depoimento span{
     vertical-align: top;
 }
 
+section.social .instagram-chamada{
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background: #98a5ae;
+}
+
+section.social .instagram-chamada p{
+    color: #ffffff;
+    padding: 10px 0;
+    font-size: 13px;
+    line-height: 23px;
+}
+
+section.social .mosaico-social{
+    float: left;
+    width: 100%;
+}
+
+section.social .img-mosaico-single-social{
+    float: left;
+    width: calc(100% / 9);
+    padding-top: calc(100% / 9);
+    background-color: #0000ff;
+    border: 6px solid #ffffff;
+}
+
+section.social .facebook-chamada{
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background: #576975;
+}
+
+section.social .facebook-chamada p{
+    line-height: 23px;
+    color: #ffffff;
+    padding: 10px 0;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 1024px) {
+    section.social .img-mosaico-single-social{
+        width: calc(100% / 6);
+        padding-top: calc(100% / 6);
+    }
+
+    section.social .mosaico-social > div:nth-of-type(1n+7){
+        display: none;
+    }
+}
+
 @media screen and (max-width: 768px){
     nav.menu-desktop{
         display: none;
@@ -347,6 +401,15 @@ section.depoimentos .depoimento-single .nome-depoimento span{
         width: 70%;
         display: inline-block;
         padding-top: calc(70% * 0.6);
+    }
+
+    section.social .img-mosaico-single-social{
+        width: calc(100% / 3);
+        padding-top: calc(100% / 3);
+    }
+
+    section.social .mosaico-social > div:nth-of-type(1n+4){
+        display: none;
     }
 }
 
